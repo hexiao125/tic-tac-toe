@@ -1,10 +1,23 @@
-body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+body * {
+  font: 20px "Gloria Hallelujah", cursive;
 }
 
 ol, ul {
   padding-left: 30px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+li button {
+  border: none;
+  margin: 2px auto;
+}
+
+li button:hover {
+  letter-spacing: 2px;
 }
 
 .board-row:after {
@@ -18,18 +31,17 @@ ol, ul {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: #eadedb;
+  border: none;
   float: left;
-  font-size: 24px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
+  height: 80px;
+  margin: 3px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 80px;
 }
 
 .square:focus {
@@ -47,4 +59,8 @@ ol, ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.highlight {
+  background-color: #F7786B;
 }
